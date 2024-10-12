@@ -4,7 +4,7 @@
    Author        : OceanEyeFF
    Email         : fdch00@163.com
    File Name     : UECplusplus.md
-   Last Modified : 2024-09-17 19:42
+   Last Modified : 2024-10-12 21:57
    Describe      : 
 
 --->
@@ -144,18 +144,4 @@ UnrealEngine内置了代码的头文件生成和文件生成，此处仅对文�
 
 ### 其他细节
 
-#### 启用宏
 
-* 中途输出调试宏
-```c++
-#define DEBUG_PRINT 1
-
-#ifdef DEBUG_PRINT
-        #define        debugPrint   Print
-#else
-        #define        debugPrint   //Print
-#endif
-
-template<class T> void Print( const T &x ) const;
-
-```
